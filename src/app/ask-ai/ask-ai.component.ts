@@ -12,6 +12,8 @@ export class AskAiComponent {
   video: any;
   transcript: any;
   apiStatus: string = 'First Ask your query?';
+  baseUrl = 'https://youtubehelper-backend.onrender.com';
+  // baseUrl = 'http://localhost:8000';
 
   constructor(private http: HttpClient) { }
 
@@ -20,7 +22,7 @@ export class AskAiComponent {
     this.transcript = '';
     this.apiStatus = "Pls wait it taking some time to fetch the data from api...";
 
-    this.http.get<any>(`http://localhost:8000/search?query=${encodeURIComponent(this.question)}`)
+    this.http.get<any>(`${this.baseUrl}/search?query=${encodeURIComponent(this.question)}`)
       .subscribe({
         next: res => {
           this.video = res.video;
