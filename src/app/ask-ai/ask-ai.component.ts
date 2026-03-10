@@ -12,7 +12,8 @@ export class AskAiComponent {
   video: any;
   transcript: any;
   apiStatus: string = 'First Ask your query?';
-  baseUrl = 'https://youtubehelper-backend-1.onrender.com';
+  baseUrl = 'https://youtubehelper-backend-2.onrender.com';
+  // https://youtubehelper-backend-2.onrender.com
   // baseUrl = 'http://localhost:8000';
 
   constructor(private http: HttpClient) { }
