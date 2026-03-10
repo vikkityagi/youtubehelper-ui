@@ -12,7 +12,7 @@ export class AskAiComponent {
   video: any;
   transcript: any;
   apiStatus: string = 'First Ask your query?';
-  baseUrl = 'https://youtubehelper-backend-7.onrender.com';
+  baseUrl = 'https://youtubehelper-backend-8.onrender.com';
   // https://youtubehelper-backend-2.onrender.com
   // https://youtubehelper-backend-4.onrender.com
   // https://youtubehelper-backend-7.onrender.com
